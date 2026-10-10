@@ -1,0 +1,92 @@
+{
+ "surface": {
+  "hex": "#fdfdfd",
+  "source": "banner",
+  "pixel": [
+   150,
+   0
+  ],
+  "share": 0.6253
+ },
+ "surface-2": {
+  "hex": "#ecf0fc",
+  "source": "banner",
+  "pixel": [
+   1412,
+   0
+  ],
+  "share": 0.1997
+ },
+ "ink": {
+  "hex": "#060606",
+  "source": "banner",
+  "pixel": [
+   1162,
+   171
+  ],
+  "share": 0.0294
+ },
+ "blue": {
+  "hex": "#0a5af9",
+  "source": "banner",
+  "pixel": [
+   1016,
+   289
+  ],
+  "share": 0.0587
+ },
+ "deep": {
+  "hex": "#18064a",
+  "source": "logo",
+  "pixel": [
+   1457,
+   911
+  ],
+  "share": 0.3217
+ },
+ "indigo": {
+  "hex": "#33118e",
+  "source": "logo",
+  "pixel": [
+   971,
+   509
+  ],
+  "share": 0.2222
+ },
+ "cyan": {
+  "hex": "#34c4fb",
+  "source": "logo",
+  "pixel": [
+   972,
+   688
+  ],
+  "share": 0.0922
+ },
+ "violet": {
+  "hex": "#8931d9",
+  "source": "logo",
+  "pixel": [
+   1184,
+   1449
+  ],
+  "share": 0.0813
+ },
+ "magenta": {
+  "hex": "#dd34b5",
+  "source": "logo",
+  "pixel": [
+   1209,
+   1225
+  ],
+  "share": 0.0909
+ },
+ "lilac": {
+  "hex": "#e4b3f2",
+  "source": "logo",
+  "pixel": [
+   1508,
+   1041
+  ],
+  "share": 0.0656
+ }
+}

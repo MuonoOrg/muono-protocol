@@ -1,0 +1,17 @@
+/* The only file allowed to hold colour literals (gate: palette).
+   Provenance: k-means (k=7 logo, k=8 banner, seed 7, 200k-pixel sample) on opaque pixels, each centroid
+   snapped to the nearest real pixel; x,y below is that pixel in the source file.
+   logo   = brand/LOGO MUONOCOIN PNG...png (2000x2000, RGBA colortype 6)
+   banner = reference/SAMPUL MUONOCOIN JPG.jpg.jpeg (1500x500) */
+:root {
+  --surface: #fdfdfd; /* banner px (150,0), cluster share 62.5% - page ground */
+  --surface-2: #ecf0fc; /* banner px (1412,0), cluster share 20.0% - tinted ground */
+  --ink: #060606; /* banner px (1162,171), cluster share 2.9% - body text */
+  --blue: #0a5af9; /* banner px (1016,289), cluster share 5.9% - links, primary action */
+  --deep: #18064a; /* logo px (1457,911), cluster share 32.2% - darkest logo field */
+  --indigo: #33118e; /* logo px (971,509), cluster share 22.2% - headings */
+  --cyan: #34c4fb; /* logo px (972,688), cluster share 9.2% - accent */
+  --violet: #8931d9; /* logo px (1184,1449), cluster share 8.1% - accent */
+  --magenta: #dd34b5; /* logo px (1209,1225), cluster share 9.1% - accent */
+  --lilac: #e4b3f2; /* logo px (1508,1041), cluster share 6.6% - highlight */
+}

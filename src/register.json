@@ -1,0 +1,76 @@
+{
+  "asOf": "2026-10-10",
+  "records": [
+    {
+      "id": "chain",
+      "label": "Chain",
+      "kind": "text",
+      "state": "stated",
+      "value": "Solana",
+      "source": "client statement",
+      "scope": "batch-level",
+      "asOf": "2026-10-10"
+    },
+    {
+      "id": "rpc",
+      "label": "RPC endpoint",
+      "kind": "link",
+      "state": "stated",
+      "url": "https://solana-rpc.publicnode.com",
+      "source": "client statement",
+      "scope": "batch-level",
+      "asOf": "2026-10-10"
+    },
+    {
+      "id": "domain",
+      "label": "Domain",
+      "kind": "link",
+      "state": "stated",
+      "url": "https://muono.org",
+      "source": "client statement",
+      "scope": "batch-level",
+      "asOf": "2026-10-10"
+    },
+    {
+      "id": "market",
+      "label": "Price feed",
+      "kind": "link",
+      "state": "stated",
+      "url": "https://api.dexscreener.com",
+      "source": "client statement",
+      "scope": "batch-level",
+      "asOf": "2026-10-10"
+    },
+    {
+      "id": "marketimg",
+      "label": "Image host",
+      "kind": "link",
+      "state": "stated",
+      "url": "https://cdn.dexscreener.com",
+      "source": "observed in API responses",
+      "scope": "batch-level",
+      "asOf": "2026-10-10"
+    },
+    {
+      "id": "ca",
+      "label": "Contract address",
+      "kind": "address",
+      "state": "absent",
+      "asOf": "2026-10-10"
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "kind": "link",
+      "state": "absent",
+      "asOf": "2026-10-10"
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "kind": "link",
+      "state": "absent",
+      "asOf": "2026-10-10"
+    }
+  ]
+}

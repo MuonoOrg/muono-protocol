@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muono | Solana token front door</title>
+<meta name="description" content="Front door of Muono, a Solana token. Each public item lives in one register and stays dimmed until confirmed.">
+<link rel="canonical" href="{{domain_url}}/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="assets/logo-180.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Muono">
+<meta property="og:description" content="Front door of Muono, a Solana token.">
+<meta property="og:image" content="{{domain_url}}/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span></span></div>
+<header class="stack" id="stack">
+  <div class="topbar">
+    <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="sidebar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </button>
+    <a class="brand" href="#top"><span class="name-text">Muono</span></a>
+    <div class="search" id="search">
+      <button class="icon-btn search-toggle" id="searchToggle" type="button" aria-label="Filter this page" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 10-.7.7l.27.28v.79l5 5L20.49 19l-5-5zm-6 0A4.5 4.5 0 1114 9.5 4.5 4.5 0 019.5 14z"/></svg>
+      </button>
+      <div class="search-field">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 10-.7.7l.27.28v.79l5 5L20.49 19l-5-5zm-6 0A4.5 4.5 0 1114 9.5 4.5 4.5 0 019.5 14z"/></svg>
+        <input type="search" id="topSearch" placeholder="Filter" autocomplete="off" aria-label="Filter this page">
+      </div>
+      <div class="search-results" id="searchResults" hidden></div>
+    </div>
+    <div class="right social" aria-label="Accounts">{{social}}</div>
+  </div>
+  {{ca}}
+</header>
+{{ticker}}
+<div class="scrim" id="scrim"></div>
+<div class="layout">
+  <aside class="sidebar" id="sidebar" aria-label="Page map">
+    <ul class="nav-tree" id="navTree">{{nav}}</ul>
+  </aside>
+  <main class="content-wrap" id="top">
+    <article class="content">
+      <nav class="breadcrumb" aria-label="Trail"><span>Muono</span><span class="sep">/</span><span>Reference desk</span></nav>
+      <section class="hero" id="hero" aria-label="Page banner">
+        <div class="hero-mesh" aria-hidden="true"></div>
+        <div class="layer" data-depth="0.08" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+        <div class="layer rings" data-depth="0.22" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="layer" data-depth="0.36" aria-hidden="true"><span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span></div>
+        <div class="layer art" data-depth="0.52" aria-hidden="true"><img src="assets/logo-320.png" srcset="assets/logo-180.png 1x, assets/logo-320.png 2x" width="210" height="210" alt=""></div>
+        <div class="layer copy" data-depth="0.14">
+          <p class="hero-kicker">Solana token</p>
+          <h1 class="page-title">Muono</h1>
+          <p class="hero-sub">Plain facts, zero noise.</p>
+        </div>
+      </section>
+      <div class="panel info">
+        <span class="p-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-6h2zm0-8h-2V7h2z"/></svg></span>
+        <div class="p-body"><p>{{lead}}</p></div>
+      </div>
+      <nav class="toc-macro" aria-label="On this page">
+        <div class="toc-head"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h2v2H4zm4 0h12v2H8zM4 11h2v2H4zm4 0h12v2H8zM4 16h2v2H4zm4 0h12v2H8z"/></svg>On this page</div>
+        <ol>
+          <li><a href="#overview">About Muono</a></li>
+          <li><a href="#facts">Facts at a glance</a></li>
+          <li><a href="#market">Market pulse</a></li>
+          <li><a href="#walkthrough">Walkthrough</a></li>
+          <li><a href="#log">Status log</a></li>
+          <li><a href="#notice">Notice</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#explore">Jump to</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="overview">About Muono</h2>
+      <p>Muono lives on Solana as a token. This page serves as its front door, a single stop that lays out the public facts and flags the pending ones.</p>
+      <p>Nothing on this page is guessed. Each item, from the chain through the contract address and finally the accounts, sits in one register. After an item is confirmed, its slot turns into a live link or a copyable string. Until then the slot stays dimmed and labelled pending.</p>
+      <h3 id="register">One record per item</h3>
+      <p>Each record is stated, absent or unconfirmed. Absent and unconfirmed records carry no address and no link, so nothing can be clicked and nothing can masquerade as genuine.</p>
+
+      <h2 id="facts">Facts at a glance</h2>
+      <p>Each tile reads straight from the register.</p>
+      <div class="stat-grid">{{facts}}</div>
+
+      <h2 id="market">Market pulse</h2>
+      <p>{{market_intro}}</p>
+      {{market}}
+
+      <h2 id="walkthrough">Walkthrough</h2>
+      <p>A brief route, from a glance to staying informed.</p>
+      <ol class="qs-journey">
+        <li class="qs-step">
+          <span class="qs-num"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.41 6L5 7.41 9.58 12 5 16.59 6.41 18l6-6zM13 6l-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"/></svg></span>
+          <div class="qs-body">
+            <h3>Check the address</h3>
+            <p>Check any address that reaches you versus the contract slot pinned at the top. While that slot reads pending, no address is official, and any note claiming otherwise comes from someone else.</p>
+            <div class="qs-links"><a class="qs-chip" href="#facts">Jump to facts</a></div>
+          </div>
+        </li>
+        <li class="qs-step">
+          <span class="qs-num"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.41 6L5 7.41 9.58 12 5 16.59 6.41 18l6-6zM13 6l-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"/></svg></span>
+          <div class="qs-body">
+            <h3>Choose a Solana tool</h3>
+            <p>Any Solana tool that manages keys can receive the token once it exists. Keep your recovery phrase off the internet and never paste it into a site.</p>
+            <div class="qs-links">{{chip_rpc}}</div>
+          </div>
+        </li>
+        <li class="qs-step">
+          <span class="qs-num"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.41 6L5 7.41 9.58 12 5 16.59 6.41 18l6-6zM13 6l-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"/></svg></span>
+          <div class="qs-body">
+            <h3>Stay current</h3>
+            <p>Official accounts will appear here, plus within the top bar, the moment they are announced.</p>
+            <div class="qs-links">{{chip_x}}{{chip_github}}</div>
+          </div>
+        </li>
+        <li class="qs-step">
+          <span class="qs-num"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.41 6L5 7.41 9.58 12 5 16.59 6.41 18l6-6zM13 6l-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"/></svg></span>
+          <div class="qs-body">
+            <h3>Study the whitepaper</h3>
+            <p>The whitepaper ships beside the repository files. It covers the aims, a supply outline and a phased plan.</p>
+            <div class="qs-links">{{chip_paper}}</div>
+          </div>
+        </li>
+      </ol>
+
+      <h2 id="log">Status log</h2>
+      <ul class="link-list">{{log}}</ul>
+
+      <h2 id="notice">Notice</h2>
+      <p>Muono is an experiment, nothing more. Nothing on this page promises, predicts or advises. A token can drop to zero, so risk only what you can afford to lose. Whatever token appears inside the market panel arrives through an outside feed and answers to its own team; a listing there endorses nothing and signals nothing about Muono.</p>
+      <p>This site offers no securities, investments or returns. Treat every ask for your keys, your phrase or a rushed payment as hostile.</p>
+
+      <h2 id="contact">Contact</h2>
+      <p>Official channels are the icons within the top bar. A dimmed icon marks a channel not yet announced; a bright one is live.</p>
+
+      <h2 id="explore">Jump to</h2>
+      <div class="card-grid">{{cards}}</div>
+    </article>
+  </main>
+</div>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p class="footer-link">{{footer_domain}}</p>
+    <ul class="footer-social">{{footer_social}}</ul>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+<script src="market.js" defer></script>
+</body>
+</html>
